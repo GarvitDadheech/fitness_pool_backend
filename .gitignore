@@ -1,0 +1,6 @@
+/node_modules
+/dist
+/build
+/src/utils/jwt.ts
+.env
+.env.local
