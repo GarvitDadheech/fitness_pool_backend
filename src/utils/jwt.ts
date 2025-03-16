@@ -10,7 +10,6 @@ export const generateToken = (userId: string, walletAddress: string): string => 
   return jwt.sign(
     { id: userId, walletAddress },
     JWT_SECRET,
-    { expiresIn: JWT_EXPIRES_IN }
   );
 };
 
