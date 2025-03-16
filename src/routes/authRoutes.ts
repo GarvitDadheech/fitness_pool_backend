@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import { getNonce, walletLogin } from '../controllers/authController';
+import { getNonce, verifyNonce, createProfile } from '../controllers/authController';
 
 const router = Router();
 
 router.get('/nonce', getNonce);
-router.post('/wallet-login', walletLogin);
+router.post('/verify-nonce', verifyNonce);
+router.post('/profile', createProfile);
 
 export { router as authRouter }; 
